@@ -1,0 +1,40 @@
+---
+title: Co.Property Knowledge Base
+description: Bangkok's Premium Short-Term Rental Management System
+template: splash
+hero:
+  tagline: "AI-Powered. Data-Driven. Premium Hospitality."
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: View Strategy
+      link: /strategy/01-buyer-persona-dossier/
+      icon: right-arrow
+      variant: primary
+    - text: Product Specs
+      link: /product/03-detailed-product-description/
+      icon: document
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## System Documentation
+
+<CardGrid stagger>
+	<Card title="Strategy" icon="star">
+		Market positioning, buyer personas, and competitor intelligence.
+        [Explore Strategy](/strategy/01-buyer-persona-dossier/)
+	</Card>
+	<Card title="Marketing" icon="rocket">
+		Campaigns, email sequences, and ad copy.
+        [View Marketing](/marketing/05-messaging-direction-summary/)
+	</Card>
+	<Card title="Product" icon="setting">
+		Product descriptions, specs, and builder tools.
+        [View Product](/product/03-detailed-product-description/)
+	</Card>
+	<Card title="Technical" icon="laptop">
+		System status and orchestrator updates.
+        [View Technical](/technical/00-campaign-orchestrator-status/)
+	</Card>
+</CardGrid>

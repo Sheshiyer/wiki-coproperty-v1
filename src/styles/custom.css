@@ -1,0 +1,107 @@
+:root {
+	/* 
+       LIGHT MODE MAPPING 
+       Starlight Logic:
+       - Black: Main Background
+       - Gray-6: Secondary Backgrounds (Sidebar)
+       - Gray-5: Borders/Separators
+       - Gray-2: Main Text
+       - Gray-1: Headings/High Contrast
+    */
+    
+	/* Brand Colors */
+	--sl-color-accent-low: #fffbeb;  /* Amber 50 */
+	--sl-color-accent: #d97706;      /* Amber 600 */
+	--sl-color-accent-high: #92400e; /* Amber 800 */
+	
+    /* Functional Colors */
+	--sl-color-white: #ffffff;       /* Always White */
+	--sl-color-black: #ffffff;       /* Main Background (White) */
+	
+    /* Grayscale (Slate) */
+	--sl-color-gray-1: #0f172a;      /* Slate 900 - Headings */
+	--sl-color-gray-2: #334155;      /* Slate 700 - Body Text (High Contrast against White) */
+	--sl-color-gray-3: #475569;      /* Slate 600 - Muted/Secondary Text */
+	--sl-color-gray-4: #94a3b8;      /* Slate 400 - Placeholders/Disabled */
+	--sl-color-gray-5: #e2e8f0;      /* Slate 200 - Borders */
+	--sl-color-gray-6: #f8fafc;      /* Slate 50 - Sidebar Background */
+
+    /* Additional Brand Colors */
+    --brand-primary: #d97706;
+}
+
+[data-theme='dark'] {
+	/* 
+       DARK MODE MAPPING 
+       Starlight Logic:
+       - Black: Main Background
+       - Gray-6: Secondary Backgrounds (Sidebar)
+       - Gray-2: Main Text
+       - Gray-1: Headings/High Contrast
+    */
+
+	/* Brand Colors */
+	--sl-color-accent-low: #451a03;  /* Amber 950 */
+	--sl-color-accent: #fbbf24;      /* Amber 400 */
+	--sl-color-accent-high: #fcd34d; /* Amber 300 */
+	
+    /* Functional Colors */
+	--sl-color-white: #ffffff;       /* Always White */
+	--sl-color-black: #0f172a;       /* Slate 900 - Main Background */
+	
+    /* Grayscale (Slate) */
+	--sl-color-gray-1: #f8fafc;      /* Slate 50 - Headings */
+	--sl-color-gray-2: #e2e8f0;      /* Slate 200 - Body Text (High Contrast against Slate 900) */
+	--sl-color-gray-3: #cbd5e1;      /* Slate 300 - Muted/Secondary Text */
+	--sl-color-gray-4: #64748b;      /* Slate 500 - Placeholders/Disabled */
+	--sl-color-gray-5: #334155;      /* Slate 700 - Borders */
+	--sl-color-gray-6: #1e293b;      /* Slate 800 - Sidebar Background */
+}
+
+/* Smooth Transitions */
+body, 
+.sidebar-content,
+header,
+footer,
+div,
+span,
+a,
+button,
+input {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Custom Hero Styles */
+.hero-html {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-html h1 {
+    color: var(--sl-color-accent-high);
+}
+
+/* Explicit Overrides for Text Elements to ensure visibility */
+p, li, td, th, blockquote {
+    color: var(--sl-color-gray-2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--sl-color-gray-1);
+}
+
+/* Adjust sidebar for better readability */
+.sidebar-content {
+    background-color: var(--sl-color-gray-6); 
+    border-right: 1px solid var(--sl-color-gray-5);
+}
+
+/* Ensure links in sidebar have good contrast */
+.sidebar-content a {
+    color: var(--sl-color-gray-2);
+}
+
+.sidebar-content a:hover,
+.sidebar-content a[aria-current="page"] {
+    color: var(--sl-color-accent);
+    background-color: var(--sl-color-accent-low);
+}
