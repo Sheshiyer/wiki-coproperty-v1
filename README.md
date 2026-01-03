@@ -1,49 +1,55 @@
-# Starlight Starter Kit: Basics
+# Co.Property Wiki
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-```
-npm create astro@latest -- --template starlight
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This is the internal wiki and documentation hub for Co.Property, built with Astro and Starlight. It serves as the central repository for strategy, marketing, product, and technical documentation.
 
 ## 🚀 Project Structure
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
 ```
 .
-├── public/
+├── public/           # Static assets (favicons, etc.)
 ├── src/
-│   ├── assets/
+│   ├── assets/       # Images and media
 │   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+│   │   └── docs/     # Documentation files (MD/MDX)
+│   └── styles/       # Custom CSS and theming
+├── astro.config.mjs  # Astro configuration
+└── package.json      # Dependencies and scripts
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## 🎨 Style Guide & Design Specifications
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+### Color Scheme Update
+The project has transitioned from the previous **Accent Yellow** (`#d97706`) to the new **Logo Red** (`#fe385c`) to align with the Co.Property brand identity.
 
-Static assets, like favicons, can be placed in the `public/` directory.
+| Role | Color Name | Hex Code | Usage |
+|------|------------|----------|-------|
+| **Primary Brand** | **Logo Red** | `#fe385c` | Main buttons, active states, key highlights |
+| **Accent High** | Red 800 | `#9f1239` | High contrast text, hover states (Light Mode) |
+| **Accent Low** | Red 50 | `#fff1f2` | Background highlights, subtle accents (Light Mode) |
+| **Neutral** | Slate | `Variable` | Text, borders, backgrounds (Slate 50-900) |
+
+### Design Tokens
+- **Primary Color**: `#fe385c` (Extracted from official logo)
+- **Typography**: Inter (System default fallback)
+- **Dark Mode**: Fully supported with high-contrast text and muted red backgrounds (`#4c0519`).
+- **Logo**: Updated homepage hero to use `logo.jpg` with a branded border.
 
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command | Action |
+| :--- | :--- |
+| `npm install` | Installs dependencies |
+| `npm run dev` | Starts local dev server at `localhost:4321` |
+| `npm run build` | Build your production site to `./dist/` |
+| `npm run preview` | Preview your build locally, before deploying |
 
-## 👀 Want to learn more?
+## 📚 Documentation Sections
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+- **Strategy**: Buyer personas, competitor intelligence, positioning.
+- **Marketing**: Messaging, campaigns, email sequences.
+- **Product**: Detailed descriptions, builders, scripts.
+- **Technical**: System status, orchestrator details.

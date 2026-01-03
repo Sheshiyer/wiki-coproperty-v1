@@ -10,9 +10,9 @@
     */
     
 	/* Brand Colors */
-	--sl-color-accent-low: #fffbeb;  /* Amber 50 */
-	--sl-color-accent: #d97706;      /* Amber 600 */
-	--sl-color-accent-high: #92400e; /* Amber 800 */
+	--sl-color-accent-low: #fff1f2;  /* Red 50 */
+	--sl-color-accent: #fe385c;      /* Logo Red */
+	--sl-color-accent-high: #9f1239; /* Red 800 */
 	
     /* Functional Colors */
 	--sl-color-white: #ffffff;       /* Always White */
@@ -27,7 +27,7 @@
 	--sl-color-gray-6: #f8fafc;      /* Slate 50 - Sidebar Background */
 
     /* Additional Brand Colors */
-    --brand-primary: #d97706;
+    --brand-primary: #fe385c;
 }
 
 [data-theme='dark'] {
@@ -41,9 +41,9 @@
     */
 
 	/* Brand Colors */
-	--sl-color-accent-low: #451a03;  /* Amber 950 */
-	--sl-color-accent: #fbbf24;      /* Amber 400 */
-	--sl-color-accent-high: #fcd34d; /* Amber 300 */
+	--sl-color-accent-low: #4c0519;  /* Red 950 */
+	--sl-color-accent: #fe385c;      /* Logo Red */
+	--sl-color-accent-high: #fda4af; /* Red 300 */
 	
     /* Functional Colors */
 	--sl-color-white: #ffffff;       /* Always White */
@@ -100,8 +100,9 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--sl-color-gray-2);
 }
 
-.sidebar-content a:hover,
-.sidebar-content a[aria-current="page"] {
-    color: var(--sl-color-accent);
-    background-color: var(--sl-color-accent-low);
+/* Homepage Logo Border */
+.hero img {
+    border: 4px solid var(--sl-color-accent);
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
